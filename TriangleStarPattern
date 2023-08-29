@@ -1,0 +1,32 @@
+public class TriangleStarPattern
+{
+	public static void main(String[] args) {
+		System.out.println("Hello World");
+		int i,j,k,n=5;
+		for (i=0; i<n; i++)   
+        {  
+            for (k=(n-i-1); k>0; k--)   
+            {  
+                System.out.print(" ");   
+                
+            }   
+            for (j=0; j<i+1; j++ )   
+            {   
+                System.out.print("* ");   
+                
+            }   
+            System.out.println();   
+            
+        } 
+	}
+}
+
+/*
+o/p
+     * 
+    * * 
+   * * * 
+  * * * * 
+ * * * * * 
+
+*/
