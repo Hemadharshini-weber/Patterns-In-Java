@@ -1,0 +1,35 @@
+class PalindromeTriangle {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!\n");
+        int i, j,n=5,odd=1,l;       
+        for (i=1; i<=n; i++)   
+        {  
+            int k=0;
+            for(l=n;l>i;l--)
+            {
+                System.out.print("  ");
+            }
+            
+            for (j=1; j<=odd; j++)   
+            {   
+                if(j<=i)
+                {
+                    k+=1;
+                }
+                else
+                {
+                    k-=1;
+                }
+                
+                System.out.print(k+" ");  
+            }           
+            
+            odd+=2;
+            System.out.println();  
+        }   
+             
+            
+        
+    }
+    
+}
