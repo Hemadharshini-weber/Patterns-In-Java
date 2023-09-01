@@ -1,0 +1,30 @@
+class HallowDiamondPattern {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!\n");
+        int i,j,n=5,k,l;
+        for(i=-(n-1);i<=n;i++)
+        {
+            if(i<0)
+            {
+                l=-i;
+            }
+            else{
+                l=i;
+            }
+            for(k=0;k<l;k++)
+            {
+                System.out.print(" ");
+            }
+            for(j=1;j<=n-l;j++)
+            {
+                if(j==1||j==n-l)
+                System.out.print("* ");
+                else{
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
+    }
+    
+}
